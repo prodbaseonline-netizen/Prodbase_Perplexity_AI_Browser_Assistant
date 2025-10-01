@@ -1,0 +1,7 @@
+#perplexity-ai-button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+#perplexity-ai-button:hover {
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4) !important;
+}

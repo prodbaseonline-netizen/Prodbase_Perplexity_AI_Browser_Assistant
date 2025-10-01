@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodbase Perplexity AI Assistant</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Prodbase Perplexity AI Assistant</h1>
+        </div>
+        
+        <div id="api-key-section">
+            <input type="password" id="api-key-input" placeholder="Enter your Perplexity API Key">
+            <button id="save-api-key">Save API Key</button>
+            <p class="info-text">Get your API key from <a href="https://www.perplexity.ai/settings/api" target="_blank">Perplexity Settings</a></p>
+        </div>
+
+        <div id="chat-section" style="display: none;">
+            <div id="chat-container">
+                <div id="messages"></div>
+            </div>
+            
+            <div class="input-section">
+                <textarea id="user-input" placeholder="Ask Perplexity AI anything about this page..."></textarea>
+                <div class="button-group">
+                    <button id="send-btn" class="primary-btn">Send</button>
+                    <button id="summarize-btn" class="secondary-btn">Summarize Page</button>
+                    <button id="clear-btn" class="secondary-btn">Clear Chat</button>
+                </div>
+            </div>
+            
+            <div class="context-section">
+                <label>
+                    <input type="checkbox" id="include-context" checked>
+                    Include page context
+                </label>
+            </div>
+        </div>
+
+        <div id="status-message"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
